@@ -48,7 +48,7 @@ function appendQuestions(json) {
 					type:"button",
 					onclick:"postResponse()"
 				}).append('Post')).append('<br><br>');
-		$('#'+id).append($('<tr/>').append($('<td/>').append('<h2>Q. '+json[i].question+'</h2>'))
+		$('#'+id). append($('<tr/>').append($('<td/>').append('<h2>Q. '+json[i].question+'</h2>'))
 						.append($('<td/>').addClass("right").append('<span class="label label-info">' + json[i].tags + '</span>').append('<br><br>').append('<span class="label label-warning">' + 'Asked by' + '<a href="#">Sagar</a>' + '</span>')));
 	}
 	/*
